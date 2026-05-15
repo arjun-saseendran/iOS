@@ -25,7 +25,7 @@ struct HikeDetailScreen: View {
 
 #Preview{
     NavigationStack{
-        HikeDetailScreen(hike: Hike(name: "Maria", photo: "sal", miles: 5))
+        HikeDetailScreen(hike: Hike(name: "Hosten", photo: "sal", miles: 5))
     }
     
 }
