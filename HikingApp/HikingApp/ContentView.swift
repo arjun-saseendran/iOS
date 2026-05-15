@@ -24,7 +24,7 @@ struct ContentView: View {
             }
             .navigationTitle("Hikes")
             .navigationDestination(for: Hike.self){
-                hike in Text(hike.name)
+                hike in HikeDetailScreen(hike: hike)
             }
             
         }
