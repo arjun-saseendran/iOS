@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  BulbApp
+//  GlobalState
 //
 //  Created by Arjun Saseendran on 16/05/26.
 //
@@ -8,16 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var isLightOn: Bool = false
-    
     var body: some View {
         VStack {
-            LightBuldView(isOn: $isLightOn)
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundStyle(.tint)
+            Text("Hello, world!")
         }
         .padding()
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(isLightOn ? .black : .white)
-       
     }
 }
 
