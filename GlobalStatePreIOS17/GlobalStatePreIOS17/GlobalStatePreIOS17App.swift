@@ -9,9 +9,18 @@ import SwiftUI
 
 @main
 struct GlobalStatePreIOS17App: App {
+    init() {
+        _appState = StateObject(wrappedValue: AppState())
+    }
+    
+    
+    @StateObject private var appState: AppState
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(appState)
         }
     }
 }
+
