@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct ValidationSummeryView: View {
+struct ValidationSummaryView: View {
     let errors: [LocalizedError]
     
-    var body some View: {
-        forEach(errors, id: \.id){ error in
+    var body: some View {
+        ForEach(errors, id: \.id){ error in
             Text(error.localizedDescription)
             
         }
